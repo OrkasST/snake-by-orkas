@@ -412,3 +412,8 @@ quiteGame.onclick = () => {
 	start.classList.remove('_hidden');
 	quiteGame.classList.add('_hidden');
 }
+
+window.addEventListener('resize', e => {
+  document.body.style.zoom = 1/devicePixelRatio;
+  document.body.style['-moz-transform'] = `scale(${1/devicePixelRatio})` ;
+});
