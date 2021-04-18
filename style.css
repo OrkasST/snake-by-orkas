@@ -1,0 +1,151 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #555;
+}
+/* font from https://fonts.google.com/  */
+/* latin-ext */
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(media/fonts/FrederickatheGreat-Regular.ttf);
+  src: url(media/fonts/FrederickatheGreat-Regular.ttf) format('woff2'),
+  url(media/fonts/FrederickatheGreat-Regular.ttf) format('truetype');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(media/fonts/FrederickatheGreat-Regular.ttf);
+  src: url(media/fonts/FrederickatheGreat-Regular.ttf) format('woff2'),
+  url(media/fonts/FrederickatheGreat-Regular.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#gameScreen {
+	height: 800px;
+	width: 800px;
+	margin: 40px;
+	background: #fff;
+}
+
+.mainHeader {
+	position: absolute;
+	top: 0;
+	left: 4rem;
+	margin: 0; 
+	padding: 0;
+
+	height: auto;
+	width: 0;
+
+	font-family: 'Fredericka the Great', cursive;
+	color: #dcffd4;
+
+
+	transition: 1s;
+	overflow: hidden;
+}
+.mainHeader._border {
+	border-right: solid #dcffd4;
+	border-right-width: 1px;
+}
+.mainHeader h1 {
+	padding: 0;
+	margin: 0;
+	display: block;
+	width: 50rem;
+	height: 100%;
+
+	font-size: 5rem;
+	font-weight: 400;
+}
+.wrapper {
+	position: absolute;
+	top: 9rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	transition: 0.9s;
+}
+.wrapper._hidden {
+	opacity: 0;
+}
+.tec {
+	margin-left: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+}
+.btn {
+	height: 3rem;
+	background: #dcffd4;
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+.btn:hover {
+	border: none;
+	transform: scale(1.1);
+	cursor: pointer;
+} 
+.btn:disabled, .btn[disabled=disabled] {
+	border: none;
+	background: #d1d6d0;
+	color: #333;
+	cursor: not-allowed;
+}
+
+.startBtn {
+	margin-bottom: 4rem;
+} 
+
+.quiteBtn {
+	margin-bottom: 4rem;
+}
+.score {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	border-radius: 1rem;
+	background: #dcffd4;
+	width: 20rem;
+	height: 5rem;
+}
+.buff {
+	width: 20rem;
+	min-height: 8rem;
+}
+.score p {
+	padding: 0;
+	margin: 0;
+	margin-left: 1rem;
+	margin-top: 0.5rem;
+}
+
+
+/*  tech classes */
+
+._centered {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1.8);
+}
+
+._hidden {
+	display: none;
+}

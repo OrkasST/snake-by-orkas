@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snake by Orkas</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="mainHeader _centered"><h1>The Snake by Orkas</h1></header>
+	<div class="wrapper _hidden">
+		<canvas id="gameScreen" width="800" height="800">noCanvasSorry</canvas>
+		<audio src="media/music/background_music.wav" id="theme"></audio>
+		<audio src="media/music/game_over.mp3" id="gameover"></audio>
+		<audio src="media/music/eat.wav" id="eat"></audio>
+		<audio src="media/music/immortality.flac" id="immortality"></audio>
+		<div class="tec">
+			<button id="startGame" class="btn startBtn _hidden" tabindex="2">Start Game</button>
+			
+			<button id="quiteGame" class="btn quiteBtn _hidden"  tabindex="1">Quite Game</button>
+			<div class="score"><p>Score: <span id="count">0</span></p></div>
+			<div class="score"><p>Highscore: <span id="highScore">0</span></p></div>
+			<div class="score buff _hidden" id="buff"><p id="text">Immortality for: <span id="timer">0</span></p></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
